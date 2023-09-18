@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Descendant combinator</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        article header {
+            background: blue;
+        }
+        article h1 {
+            background: yellow;
+        }
+        article p {
+            background: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <article>
+        <header>
+            <h1>Article title</h1>
+        </header>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <section>
+            <article class="comment">
+                Lorem, ipsum.
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+            <article class="comment">Lorem, ipsum.</article>
+            <article class="comment">Lorem, ipsum.</article>
+        </section>
+    </article>
 </body>
 </html>
